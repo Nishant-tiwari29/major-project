@@ -1,0 +1,60 @@
+services:
+  # -------------------------------------------------------------
+  # OPTION 1: Unified Full-Stack Service (Recommended for Free Tier)
+  # Serves both the React GIS frontend and FastAPI backend on 1 URL
+  # -------------------------------------------------------------
+  - type: web
+    name: logistics-optimizer-fullstack
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: "./render-build.sh"
+    startCommand: "uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHONPATH
+        value: backend
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CORS_ORIGINS
+        value: "*"
+    healthCheckPath: /health
+
+  # -------------------------------------------------------------
+  # OPTION 2: Decoupled Backend Web Service (Optional)
+  # -------------------------------------------------------------
+  - type: web
+    name: logistics-optimizer-backend
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r backend/requirements.txt && python backend/app/core/seed_data.py"
+    startCommand: "uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHONPATH
+        value: backend
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CORS_ORIGINS
+        value: "*"
+    healthCheckPath: /health
+
+  # -------------------------------------------------------------
+  # OPTION 2: Decoupled Frontend Static Site (Optional)
+  # -------------------------------------------------------------
+  - type: web
+    name: logistics-optimizer-frontend
+    runtime: static
+    region: oregon
+    plan: free
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishPath: "./frontend/dist"
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        fromService:
+          type: web
+          name: logistics-optimizer-backend
+          property: host

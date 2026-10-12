@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+
+# Pytest / Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases
+logistics.db
+
+# Frontend build cache
+.vite/
+
+# Operating System files
+.DS_Store
+Thumbs.db

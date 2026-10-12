@@ -1,0 +1,244 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Apex Electronics Ltd",
+      "address": "Connaught Place, Block B",
+      "node_id": 5,
+      "latitude": 28.6328,
+      "longitude": 77.2197,
+      "window_start_hour": 9.0,
+      "window_end_hour": 11.5,
+      "priority": 4,
+      "service_time_min": 12.0,
+      "packages": [
+        {"weight_kg": 45.0, "volume_m3": 0.35, "fragile": true, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 2,
+      "customer_name": "Modern Garments",
+      "address": "Karol Bagh Main Market",
+      "node_id": 6,
+      "latitude": 28.6520,
+      "longitude": 77.1900,
+      "window_start_hour": 9.5,
+      "window_end_hour": 13.0,
+      "priority": 3,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 60.0, "volume_m3": 0.80, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 3,
+      "customer_name": "MediCare Diagnostics",
+      "address": "Lajpat Nagar Central",
+      "node_id": 7,
+      "latitude": 28.5677,
+      "longitude": 77.2433,
+      "window_start_hour": 9.0,
+      "window_end_hour": 11.0,
+      "priority": 5,
+      "service_time_min": 15.0,
+      "packages": [
+        {"weight_kg": 25.0, "volume_m3": 0.20, "fragile": true, "requires_cold_chain": true}
+      ]
+    },
+    {
+      "id": 4,
+      "customer_name": "Select City Office",
+      "address": "Saket District Centre",
+      "node_id": 8,
+      "latitude": 28.5244,
+      "longitude": 77.2100,
+      "window_start_hour": 11.0,
+      "window_end_hour": 14.5,
+      "priority": 3,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 75.0, "volume_m3": 0.60, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 5,
+      "customer_name": "Boutique Cafe Supply",
+      "address": "Hauz Khas Village",
+      "node_id": 9,
+      "latitude": 28.5494,
+      "longitude": 77.2001,
+      "window_start_hour": 10.0,
+      "window_end_hour": 13.5,
+      "priority": 2,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 40.0, "volume_m3": 0.40, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 6,
+      "customer_name": "South Point Retailers",
+      "address": "Vasant Kunj Sector C",
+      "node_id": 10,
+      "latitude": 28.5200,
+      "longitude": 77.1550,
+      "window_start_hour": 12.0,
+      "window_end_hour": 16.0,
+      "priority": 3,
+      "service_time_min": 15.0,
+      "packages": [
+        {"weight_kg": 110.0, "volume_m3": 0.95, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 7,
+      "customer_name": "Dwarka Tech Solutions",
+      "address": "Dwarka Sector 10",
+      "node_id": 11,
+      "latitude": 28.5800,
+      "longitude": 77.0600,
+      "window_start_hour": 10.5,
+      "window_end_hour": 14.0,
+      "priority": 4,
+      "service_time_min": 12.0,
+      "packages": [
+        {"weight_kg": 30.0, "volume_m3": 0.25, "fragile": true, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 8,
+      "customer_name": "West Gate Distributors",
+      "address": "Janakpuri District Centre",
+      "node_id": 12,
+      "latitude": 28.6290,
+      "longitude": 77.0800,
+      "window_start_hour": 13.0,
+      "window_end_hour": 17.0,
+      "priority": 2,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 85.0, "volume_m3": 0.70, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 9,
+      "customer_name": "Rohini Mega Mart",
+      "address": "Rohini Sector 7",
+      "node_id": 13,
+      "latitude": 28.7100,
+      "longitude": 77.1200,
+      "window_start_hour": 9.5,
+      "window_end_hour": 13.0,
+      "priority": 3,
+      "service_time_min": 15.0,
+      "packages": [
+        {"weight_kg": 140.0, "volume_m3": 1.20, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 10,
+      "customer_name": "North Ex Hardware",
+      "address": "Pitampura Commercial Complex",
+      "node_id": 14,
+      "latitude": 28.6990,
+      "longitude": 77.1400,
+      "window_start_hour": 11.0,
+      "window_end_hour": 15.0,
+      "priority": 2,
+      "service_time_min": 12.0,
+      "packages": [
+        {"weight_kg": 95.0, "volume_m3": 0.85, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 11,
+      "customer_name": "Heritage Bookstore",
+      "address": "Civil Lines",
+      "node_id": 15,
+      "latitude": 28.6800,
+      "longitude": 77.2250,
+      "window_start_hour": 10.0,
+      "window_end_hour": 14.0,
+      "priority": 1,
+      "service_time_min": 8.0,
+      "packages": [
+        {"weight_kg": 35.0, "volume_m3": 0.30, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 12,
+      "customer_name": "Spice Emporium",
+      "address": "Chandni Chowk",
+      "node_id": 16,
+      "latitude": 28.6560,
+      "longitude": 77.2300,
+      "window_start_hour": 9.0,
+      "window_end_hour": 12.0,
+      "priority": 4,
+      "service_time_min": 12.0,
+      "packages": [
+        {"weight_kg": 50.0, "volume_m3": 0.45, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 13,
+      "customer_name": "East View Publishers",
+      "address": "Mayur Vihar Phase 1",
+      "node_id": 17,
+      "latitude": 28.6050,
+      "longitude": 77.3000,
+      "window_start_hour": 10.0,
+      "window_end_hour": 13.5,
+      "priority": 3,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 65.0, "volume_m3": 0.50, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 14,
+      "customer_name": "Tech Corp Sector 18",
+      "address": "Noida Sector 18",
+      "node_id": 18,
+      "latitude": 28.5700,
+      "longitude": 77.3200,
+      "window_start_hour": 11.5,
+      "window_end_hour": 15.0,
+      "priority": 5,
+      "service_time_min": 15.0,
+      "packages": [
+        {"weight_kg": 80.0, "volume_m3": 0.65, "fragile": true, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 15,
+      "customer_name": "Okhla Industrial Supply",
+      "address": "Okhla Industrial Area Phase 3",
+      "node_id": 19,
+      "latitude": 28.5300,
+      "longitude": 77.2700,
+      "window_start_hour": 12.0,
+      "window_end_hour": 16.5,
+      "priority": 4,
+      "service_time_min": 14.0,
+      "packages": [
+        {"weight_kg": 130.0, "volume_m3": 1.10, "fragile": false, "requires_cold_chain": false}
+      ]
+    },
+    {
+      "id": 16,
+      "customer_name": "IT Hub Nehru Place",
+      "address": "Nehru Place Commercial Complex",
+      "node_id": 20,
+      "latitude": 28.5480,
+      "longitude": 77.2510,
+      "window_start_hour": 9.5,
+      "window_end_hour": 12.5,
+      "priority": 3,
+      "service_time_min": 10.0,
+      "packages": [
+        {"weight_kg": 40.0, "volume_m3": 0.35, "fragile": true, "requires_cold_chain": false}
+      ]
+    }
+  ]
+}
