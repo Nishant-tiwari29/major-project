@@ -48,8 +48,7 @@ Render includes native Blueprint support via [`render.yaml`](file:///c:/Users/Ni
 3. Connect your GitHub repository (`major-project`).
 4. Render will automatically detect `render.yaml` and configure:
    - Service name: `logistics-optimizer-fullstack`
-   - Build command: `./render-build.sh`
-   - Start command: `uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT`
+   - Runtime: Docker, using the root `Dockerfile`
    - Health check: `/health`
 5. Click **Apply**.
 6. Render will build and deploy your project automatically!
